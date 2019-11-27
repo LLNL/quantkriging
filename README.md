@@ -9,7 +9,7 @@ Quantkriging can be downloaded and installed inside of RStudio by using the devt
 
 once devtools is installed, run:
 > library(devtools)
-> install_github("kquinlan/quantkriging")
+> install_github("LLNL/quantkriging")
 
 
 Documentation
@@ -32,8 +32,8 @@ Licenses
 
 quantkriging is distributed under the terms of the MIT license
 
-See [LICENSE](https://github.com/quantkriging/quantkriging/blob/develop/LICENSE), and
-[NOTICE](https://github.com/quantkriging/quantkriging/blob/develop/NOTICE) for details.
+See [LICENSE](https://raw.githubusercontent.com/LLNL/simplexdesign/master/LICENSE), and
+[NOTICE](https://raw.githubusercontent.com/LLNL/simplexdesign/master/NOTICE) for details.
 
 SPDX-License-Identifier: MIT
 
