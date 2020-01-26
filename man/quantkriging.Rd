@@ -3,6 +3,7 @@
 \docType{package}
 \name{quantkriging}
 \alias{quantkriging}
+\alias{quantkriging-package}
 \title{quantkriging}
 \description{
 Quantile Kriging is a method to model the uncertainty of a stochastic simulation by modelling both the overall simulation response and the output distribution at each sample point.  The output distribution is characterized by dividing it into quantiles, where the division of each quantile is determined by kriging.

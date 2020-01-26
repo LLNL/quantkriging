@@ -4,15 +4,8 @@
 \alias{QuantPlot}
 \title{Plot Univariate Quantile Data}
 \usage{
-QuantPlot(
-  QKResults,
-  X1 = NULL,
-  Y1 = NULL,
-  main = NULL,
-  xlab = NULL,
-  ylab = NULL,
-  colors = NULL
-)
+QuantPlot(QKResults, X1 = NULL, Y1 = NULL, main = NULL,
+  xlab = NULL, ylab = NULL, colors = NULL)
 }
 \arguments{
 \item{QKResults}{Output from the quantKrig function.}

@@ -35,10 +35,10 @@
 #' \item{xstar}{Matrix of unique input values}
 #' \item{ystar}{Average value at each unique input value}
 #' \item{Ki }{Inverted covariance matrix}
-#' \item{quantv}{Vector of alpha values between 0 and 1 for estimated quantiles, it is reccomended that only a small number of quantiles are used for fitting and more quantiles can be found later using newQuants}
+#' \item{quantv}{Vector of alpha values between 0 and 1 for estimated quantiles, it is recommended that only a small number of quantiles are used for fitting and more quantiles can be found later using newQuants}
 #' \item{mult}{Number of replicates at each input}
 #' }
-#' @details Fits quantile kriging using a double exponential or Matern covariance function. This emulator is for a stochastic simulation and models the distribution of the results (through the quantiles), not just the mean.  The hyperparameters can be trained using maximum likelihood estimation or leave-one-out cross validation as reccomended in Plumlee and Tuo (2014).  The GP is trained using the Woodbury formula to improve computation speed with replication as shown in Binois et al. (2018).  To get meaningful results, there should be sufficient replication at each input. The quantiles at a location \eqn{x0} are found using: \deqn{\mu(x0) + kn(x0)Kn^{-1}(y(i) - \mu(x)}) where \eqn{Kn} is the kernel of the design matrix (with nugget effect), \eqn{y(i)} the ordered sample closest to that quantile at each input, and \eqn{\mu(x)} the mean at each input.
+#' @details Fits quantile kriging using a double exponential or Matern covariance function. This emulator is for a stochastic simulation and models the distribution of the results (through the quantiles), not just the mean.  The hyperparameters can be trained using maximum likelihood estimation or leave-one-out cross validation as recommended in Plumlee and Tuo (2014).  The GP is trained using the Woodbury formula to improve computation speed with replication as shown in Binois et al. (2018).  To get meaningful results, there should be sufficient replication at each input. The quantiles at a location \eqn{x0} are found using: \deqn{\mu(x0) + kn(x0)Kn^{-1}(y(i) - \mu(x)}) where \eqn{Kn} is the kernel of the design matrix (with nugget effect), \eqn{y(i)} the ordered sample closest to that quantile at each input, and \eqn{\mu(x)} the mean at each input.
 #'
 #'
 #' @export
