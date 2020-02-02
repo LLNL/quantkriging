@@ -5,7 +5,6 @@ de## Test environments
 
 ## R CMD check results
 
-0 errors | 0 warnings | 2 note
+0 errors | 0 warnings | 1 note
 
 * This is a new release.
-* NOTICE file is required by my company in any code release
